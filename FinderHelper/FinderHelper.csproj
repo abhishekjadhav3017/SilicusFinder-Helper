@@ -48,19 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enum\Building.cs" />
+    <Compile Include="Building.cs" />
     <Compile Include="Contact.cs" />
-    <Compile Include="Enum\Degree.cs" />
-    <Compile Include="Enum\Division.cs" />
+    <Compile Include="Degree.cs" />
+    <Compile Include="Division.cs" />
     <Compile Include="Employee.cs" />
-    <Compile Include="Enum\EmployeeType.cs" />
-    <Compile Include="Enum\Engagement.cs" />
+    <Compile Include="EmployeeType.cs" />
+    <Compile Include="Engagement.cs" />
     <Compile Include="Experience.cs" />
-    <Compile Include="Enum\FloorNumber.cs" />
-    <Compile Include="Enum\Gender.cs" />
+    <Compile Include="FloorNumber.cs" />
+    <Compile Include="Gender.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Project.cs" />
-    <Compile Include="Enum\ProjectType.cs" />
+    <Compile Include="ProjectType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Qualification.cs" />
     <Compile Include="SkillSet.cs" />

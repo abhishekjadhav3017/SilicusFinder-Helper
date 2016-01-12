@@ -47,7 +47,7 @@ namespace SilicusFinderDemo_Models
 
         [Display(Name = "Skill Set")]
      //   [Required(ErrorMessage = "Enter your Skills")]
-        public SkillSet SkillSet { get; set; }
+        public virtual List<SkillSet> SkillSet { get; set; }
 
        // [Required(ErrorMessage = "Enter your Location")]
         public Location Location { get; set; }
@@ -55,6 +55,6 @@ namespace SilicusFinderDemo_Models
      //   [Required(ErrorMessage = "Please enter Contact")]
         public Contact Contact { get; set; }
 
-        public List<Project> Project { get; set; }   // rename at the time of mapping otherwise Project_ProjectId column will get created
+        public virtual List<Project> Project { get; set; }   // rename at the time of mapping otherwise Project_ProjectId column will get created
     }
 }

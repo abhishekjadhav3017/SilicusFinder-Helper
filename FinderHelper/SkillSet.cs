@@ -8,6 +8,7 @@ namespace SilicusFinderDemo_Models
 {
     public class SkillSet
     {
+        public int SkillSetId { get; set; }
         public int TechnologyId { get; set; }
         public string Version { get; set; }
         public string Tools { get; set; }
