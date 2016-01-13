@@ -13,12 +13,11 @@ namespace SilicusFinderDemo_Models
         [Key]
         public int ContactId { get; set; }
 
+        public string SkypeId { get; set; }
         public string EmailId { get; set; } // have to make it unique 
         public string PhoneNumber { get; set; }
         public int? MobileNumber { get; set; }
 
-        //[ForeignKey("Employee")]
-        //public int EmployeeId { get; set; }
-        public virtual Employee Employee { get; set; }
+       // public virtual Employee Employee { get; set; }
     }
 }

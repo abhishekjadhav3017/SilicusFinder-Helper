@@ -43,20 +43,22 @@ namespace SilicusFinderDemo_Models
       //  [Required(ErrorMessage = "Enter your Highest Qualification")]
         public string HighestQualification { get; set; }
 
-        [Display(Name = "Skill Set")]
-        public virtual List<SkillSet> SkillSets { get; set; }
+        public virtual ICollection<SkillSet> SkillSets { get; set; }
 
-        [ForeignKey("Location")]
-        public int Location { get; set; }      // composite key in Location, Foreign key in Employee
-        public virtual Location Location { get; set; }
+        [ForeignKey("CubicalLocation")]
+        public int CubicalLocationId { get; set; }      // composite key in Location, Foreign key in Employee
+        public virtual CubicalLocation CubicalLocation { get; set; }
 
         [ForeignKey("Contact")]
         public int ContactId { get; set; }
         public virtual Contact Contact { get; set; }
-
-        //can we give column name as ProjectId for many-to-many
-        public virtual List<Project> Projects { get; set; }   // rename at the time of mapping otherwise Project_ProjectId column will get created
-
-        // have to add one to one mapping (FK for qualification etc)
+        
+        public virtual ICollection<Project> Projects { get; set; }   // rename at the time of mapping otherwise Project_ProjectId column will get created
     }
 }
+
+
+//public virtual int Class1Id {get;set;}
+//    [Required]
+//    [ForeignKey("Class1Id")]
+//    public Class1 Class1 {get;set;}

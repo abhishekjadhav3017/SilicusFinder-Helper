@@ -24,37 +24,32 @@ namespace SilicusFinderDemo_Models
 
         public EngagementType EngagementType { get; set; }
 
-        [Required(ErrorMessage = "Start Date can't be blank")]
         [Display(Name = "Start Date")]
-        public DateTime StartDate { get; set; }         // have to make it nullable or not
+        public DateTime? StartDate { get; set; }
 
-        [Required(ErrorMessage = "Expected End_Date can't be blank")]
         [Display(Name = "Expected End_Date")]
         public DateTime? ExpectedEndDate { get; set; }
 
-        [Required(ErrorMessage = "Actual End_Date can't be blank")]
         [Display(Name = "Actual End_Date")]
         public DateTime? ActualEndDate { get; set; }
 
-        [Required(ErrorMessage = "Engagement Manager Id can't be blank")]
+       // [Required(ErrorMessage = "Engagement Manager Id can't be blank")]
         [Display(Name = "Project Name")]
-        public int EngagementManagerId { get; set; }
+        public int? EngagementManagerId { get; set; }
 
-        [Required(ErrorMessage = "Project Manager Id can't be blank")]
+       // [Required(ErrorMessage = "Project Manager Id can't be blank")]
         [Display(Name = "Project Manager Id")]
-        public int ProjectManagerId { get; set; }
+        public int? ProjectManagerId { get; set; }
 
         [StringLength(150, ErrorMessage = "Additional Notes should contain less than 150 characters")]
         [Display(Name = "Additional Notes")]
         public string AdditionalNotes { get; set; }
 
-        [Display(Name = "Technology Id")]
-        public int TechnologyId { get; set; }    // have some issue with Technology
-        
-        public virtual List<Employee> Employee { get; set; }
+        //[Display(Name = "Technology Id")]
+        //public int TechnologyId { get; set; }    // have some issue with Technology
 
-        public int SkillSetId { get; set; }
-        [Display(Name = "Skill Set")]
-        public virtual List<SkillSet> SkillSet { get; set; }
+        public virtual ICollection<SkillSet> SkillSets { get; set; }
+
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

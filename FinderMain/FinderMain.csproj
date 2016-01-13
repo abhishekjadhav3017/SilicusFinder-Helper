@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6A822D63-556C-4382-BF91-6EAF4D02FBE4}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{805767CC-7DC4-4DCB-BCCB-FD9F6AE062C3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FinderHelper</RootNamespace>
-    <AssemblyName>FinderHelper</AssemblyName>
+    <RootNamespace>FinderMain</RootNamespace>
+    <AssemblyName>FinderMain</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,38 +32,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RemovedItems\Building.cs" />
-    <Compile Include="Contact.cs" />
-    <Compile Include="RemovedItems\Degree.cs" />
-    <Compile Include="RemovedItems\Division.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeType.cs" />
-    <Compile Include="Engagement.cs" />
-    <Compile Include="RemovedItems\Experience.cs" />
-    <Compile Include="RemovedItems\FloorNumber.cs" />
-    <Compile Include="Gender.cs" />
-    <Compile Include="CubicalLocation.cs" />
-    <Compile Include="Project.cs" />
-    <Compile Include="ProjectType.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemovedItems\Qualification.cs" />
-    <Compile Include="SkillSet.cs" />
-    <Compile Include="RemovedItems\Technology.cs" />
-    <Compile Include="RemovedItems\TechnologyType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinderHelper.Data\FinderHelper.Data.csproj">
+      <Project>{6432c29d-2949-46ec-9d76-0797d2788a00}</Project>
+      <Name>FinderHelper.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinderHelper\FinderHelper.csproj">
+      <Project>{6a822d63-556c-4382-bf91-6eaf4d02fbe4}</Project>
+      <Name>FinderHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

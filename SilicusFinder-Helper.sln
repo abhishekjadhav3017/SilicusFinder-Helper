@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinderHelper", "FinderHelper\FinderHelper.csproj", "{6A822D63-556C-4382-BF91-6EAF4D02FBE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinderHelper.Data", "FinderHelper.Data\FinderHelper.Data.csproj", "{6432C29D-2949-46EC-9D76-0797D2788A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinderMain", "FinderMain\FinderMain.csproj", "{805767CC-7DC4-4DCB-BCCB-FD9F6AE062C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6A822D63-556C-4382-BF91-6EAF4D02FBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A822D63-556C-4382-BF91-6EAF4D02FBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A822D63-556C-4382-BF91-6EAF4D02FBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6432C29D-2949-46EC-9D76-0797D2788A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6432C29D-2949-46EC-9D76-0797D2788A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6432C29D-2949-46EC-9D76-0797D2788A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6432C29D-2949-46EC-9D76-0797D2788A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805767CC-7DC4-4DCB-BCCB-FD9F6AE062C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805767CC-7DC4-4DCB-BCCB-FD9F6AE062C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805767CC-7DC4-4DCB-BCCB-FD9F6AE062C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805767CC-7DC4-4DCB-BCCB-FD9F6AE062C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
