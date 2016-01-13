@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SilicusFinderDemo_Models
 {
-    public enum Engagement
+    public enum EngagementType
     {
         T_and_M,
         Fixed_Price,

@@ -9,7 +9,6 @@ namespace SilicusFinderDemo_Models
     {
         BE,
         BTech,
-        ME,
         MTech,
         MSC,
         MCA

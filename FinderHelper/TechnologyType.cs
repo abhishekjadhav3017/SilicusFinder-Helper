@@ -7,5 +7,6 @@ namespace SilicusFinderDemo_Models
 {
     public enum TechnologyType
     {
+
     }
 }

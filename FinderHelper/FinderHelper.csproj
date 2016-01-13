@@ -48,21 +48,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Building.cs" />
+    <Compile Include="RemovedItems\Building.cs" />
     <Compile Include="Contact.cs" />
-    <Compile Include="Degree.cs" />
-    <Compile Include="Division.cs" />
+    <Compile Include="RemovedItems\Degree.cs" />
+    <Compile Include="RemovedItems\Division.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeType.cs" />
     <Compile Include="Engagement.cs" />
-    <Compile Include="Experience.cs" />
-    <Compile Include="FloorNumber.cs" />
+    <Compile Include="RemovedItems\Experience.cs" />
+    <Compile Include="RemovedItems\FloorNumber.cs" />
     <Compile Include="Gender.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="ProjectType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Qualification.cs" />
+    <Compile Include="RemovedItems\Qualification.cs" />
     <Compile Include="SkillSet.cs" />
     <Compile Include="Technology.cs" />
     <Compile Include="TechnologyType.cs" />

@@ -7,5 +7,7 @@ namespace SilicusFinderDemo_Models
 {
     public enum ProjectType
     {
+        Internal,
+        External
     }
 }
